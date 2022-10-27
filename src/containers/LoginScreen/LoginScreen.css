@@ -1,0 +1,159 @@
+.loginscreen {
+  position: relative;
+  height: 100%;
+  background: url("../../assets/loginbackground.jpg");
+  background-size: cover;
+}
+
+.loginscreen__gradient {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginscreen__logo {
+  padding-top: 30px;
+  padding-left: 60px;
+  position: fixed;
+  left: 0;
+  width: 200px;
+}
+
+.loginscreen__signin {
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  background-color: rgb(229,9,20);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.loginscreen__body > h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.loginscreen__body > h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.loginscreen__form {
+  margin-top: 50px;
+}
+
+.loginscreen__form p {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+}
+
+.loginscreen__form-div {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.loginscreen__form-div * {
+  height: 100%;
+}
+
+.loginscreen__form-div button {
+  color: white;
+  background-color: rgb(229,9,20);
+  padding: 0px 15px;
+  border: none;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.loginscreen__form-div input {
+  border: none;
+  padding: 0px 20px;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+  width: 60%;
+}
+
+.loginscreen__body {
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  top: 25%;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .loginscreen__body {
+    top: 25%;
+  }
+  .loginscreen__body > h1 {
+    font-size: 2.5rem;
+  }
+  .loginscreen__body > h2 {
+    font-size: 1.4rem;
+  }
+
+  .loginscreen__form p {
+    font-size: 1.2rem;
+  }
+
+  .loginscreen__form-div {
+    flex-direction: column;
+  }
+  .loginscreen__form-div button {
+    border-radius: 0.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .loginscreen__form-div input {
+    padding: 10px 20px;
+    margin-top: 40px;
+    width: 80%;
+    border-radius: 0.2rem;
+  }
+
+  .loginscreen__signin {
+    right: 20px;
+  } 
+  .loginscreen__logo {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loginscreen__body > h1 {
+    font-size: 2rem;
+  }
+  .loginscreen__logo {
+    width: 100px;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  .loginscreen__logo {
+    width: 100px;
+  }
+  .loginscreen__body {
+    top: 20%;
+  }
+}

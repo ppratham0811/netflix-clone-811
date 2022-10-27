@@ -1,0 +1,40 @@
+.profile-screen__plans * {
+  font-weight: 300;
+}
+
+.profile-screen__plans > h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.profile-screen__plan-desc {
+  padding: 10px 0;
+}
+
+.plan-screen {
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.plan-screen:hover {
+  opacity: 1;
+}
+
+.plan__subscribe {
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 0.2rem;
+  padding: 10px 20px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+}
+
+.plan__subscribe--disabled {
+  background-color: gray;
+}
